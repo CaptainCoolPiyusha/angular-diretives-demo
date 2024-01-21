@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span class="toolbar-title">SPARThoughts</span>
+    <span class="bytebuddies" [ngClass]="{'custom-class': isHovered}" 
+          (mouseenter)="toggleHover(true)" 
+          (mouseleave)="toggleHover(false)">
+        Bytebuddies
+    </span>
+</mat-toolbar>

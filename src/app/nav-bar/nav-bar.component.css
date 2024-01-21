@@ -1,0 +1,29 @@
+mat-toolbar {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 5px;
+}
+
+.toolbar-title {
+    font-weight: bold;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bytebuddies {
+    letter-spacing: 1px;
+    font-style: normal;
+    color: black;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out; 
+}
+
+.custom-class {
+    color: white ;
+}

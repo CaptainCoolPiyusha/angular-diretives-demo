@@ -1,0 +1,75 @@
+<div *ngFor="let t of teamMembers" [ngSwitch]="t.position">   
+
+    <div class="team-container">
+        <div class="image-container"><img [src]="t.image" alt="" style="max-height: 50px; max-width: 50px"></div>
+        <div>
+            <div class="name-container">
+                <h6>{{t.name}}</h6>
+            </div>
+            <div class="detailContainer">
+                <div class="details">{{t.gender}}</div>
+                <div class="details" [ngStyle]="{color: t.position=='Full Time Employee'?'Green':'Red'}" >{{t.position}}
+                   
+                    
+                   
+                </div>
+            </div>
+        </div>
+        
+       <div class="options" *ngSwitchCase="'Full Time Employee'">
+    
+            <button class="btn-take-update">Take Updates</button>
+            <button class="btn-contact">Contact</button>
+    
+        </div>
+        <div class="options" *ngSwitchDefault>
+    
+            <button class="btn-contact">Contact</button>
+    
+        </div>
+        <!-- <div class="options">
+    
+            <button class="btn-take-update">Take Updates</button>
+            <button class="btn-contact">Contact</button>
+    
+        </div> -->
+  
+        
+    </div>
+       
+    </div>
+    
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div >   
+
+    <div class="team-container">
+        <div class="image-container"><img src="assets/Images/female.png" alt="" style="max-height: 50px; max-width: 50px"></div>
+        <div>
+            <div class="name-container">
+                <h6>piyusha patil</h6>
+            </div>
+            <div class="detailContainer">
+                <div class="details">Female</div>
+                <div class="details">Intern
+                </div>
+            </div>
+        </div>
+        <div class="options">
+    
+            <button class="btn-take-update">Take Updates</button>
+            <button class="btn-contact">Contact</button>
+    
+        </div>
+        
+    </div>
+    </div> --> -->
